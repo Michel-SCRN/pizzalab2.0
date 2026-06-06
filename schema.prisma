@@ -28,11 +28,3 @@ model Order {
   quantity  Int
   status    String @default("preparando")
 }
-
-model Order {
-  id        String @id @default(auto()) @map("_id") @db.ObjectId
-  userId    String @db.ObjectId
-  pizzaId   String @db.ObjectId
-  quantity  Int
-  status    String @default("preparando")
-}
